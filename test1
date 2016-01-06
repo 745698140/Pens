@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int T;
+	cin>>T;
+	for (int i=0;i<T;i++)
+	{
+		int a,b,c,x,y;
+		int sum=0;
+		cin>>a>>b>>c>>x>>y;
+		for (int i1=0;i1<=x;i1++)
+		{
+			for (int i2=0;i2<=x;i2++)
+			{
+				if ((i1*a+i2*b+(x-i1-i2)*c)==y&&(x-i1-i2>=0))
+				{
+					sum=sum+1;
+				
+				}
+			}
+		}
+		cout<<sum<<endl;
+	}
+}
